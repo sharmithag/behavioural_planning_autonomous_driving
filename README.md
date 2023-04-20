@@ -3,8 +3,8 @@ Behavioral planning with Reinforcement Learning algorithms using Gynmasium (Prev
 
 Report (in progress)
 
-https://docs.google.com/document/d/1RdgXRRZ7Fi1EvPcNhPmgXT8O06KzQyNHx_sZiGMJk3s/edit?usp=sharing
 
+Click [here](https://docs.google.com/document/d/1RdgXRRZ7Fi1EvPcNhPmgXT8O06KzQyNHx_sZiGMJk3s/edit?usp=sharing) for Report
 
 ## Dependencies
 ```
@@ -31,4 +31,10 @@ python3 intersection_dqn.py
 ```
 Then there will be a folder created named videos and the video will be saved in that folder.
 
+## Results
 
+### Highway Lane change
+![](videos/laneChange.gif)
+
+### Intersection
+![](videos/intersection.gif)
