@@ -8,8 +8,8 @@ from rl_agents.agents.common.factory import load_agent, load_environment
 # Get the environment and agent configurations from the rl-agents repository
 os.chdir('rl-agents/scripts/')
 print(os.getcwd())
-env_config = 'configs/IntersectionEnv/env.json'
-agent_config = 'configs/IntersectionEnv/agents/DQNAgent/ego_attention_2h.json'
+env_config = 'configs/RoundaboutEnv/env.json'
+agent_config = 'configs/RoundaboutEnv/agents/DeterministicPlannerAgent/baseline.json'
 
 env = load_environment(env_config)
 agent = load_agent(agent_config, env)
