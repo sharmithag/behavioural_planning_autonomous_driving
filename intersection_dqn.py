@@ -8,8 +8,8 @@ from rl_agents.agents.common.factory import load_agent, load_environment
 # Get the environment and agent configurations from the rl-agents repository
 os.chdir('rl-agents/scripts/')
 print(os.getcwd())
-env_config = 'configs/IntersectionEnv/env.json'
-agent_config = 'configs/IntersectionEnv/agents/DQNAgent/ego_attention_2h.json'
+env_config = 'utils/IntersectionEnv/env.json'
+agent_config = 'utils/IntersectionEnv/agents/DQNAgent/ego_attention_2h.json'
 
 env = load_environment(env_config)
 agent = load_agent(agent_config, env)
@@ -19,13 +19,4 @@ print(f"Ready to train {agent} on {env}")
 
 evaluation.train()
 
-env = load_environment(env_config)
-env.configure({"offscreen_rendering": True})
-agent = load_agent(agent_config, env)
-evaluation = Evaluation(env, agent, num_episodes=1)
-evaluation.train()
 
-# sys.path.insert(0, './highway-env/scripts/')
-
-# from utils import record_videos, show_videos
-# show_videos(evaluation.run_directory)

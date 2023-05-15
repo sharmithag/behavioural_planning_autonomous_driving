@@ -1,0 +1,59 @@
+{
+    "agent": {
+        "__class__": "<class 'rl_agents.agents.tree_search.deterministic.DeterministicPlannerAgent'>",
+        "budget": 75,
+        "display_tree": false,
+        "env_preprocessors": [
+            {
+                "method": "simplify"
+            }
+        ],
+        "gamma": 0.7,
+        "receding_horizon": 1,
+        "step_strategy": "reset",
+        "terminal_reward": 0
+    },
+    "env": {
+        "__class__": "<class 'gymnasium.wrappers.order_enforcing.OrderEnforcing'>",
+        "action": {
+            "type": "DiscreteMetaAction"
+        },
+        "centering_position": [
+            0.3,
+            0.5
+        ],
+        "collision_reward": -1,
+        "controlled_vehicles": 1,
+        "duration": 40,
+        "ego_spacing": 2,
+        "high_speed_reward": 0.4,
+        "id": "highway-v0",
+        "import_module": "highway_env",
+        "initial_lane_id": null,
+        "lane_change_reward": 0,
+        "lanes_count": 4,
+        "manual_control": false,
+        "normalize_reward": true,
+        "observation": {
+            "type": "Kinematics"
+        },
+        "offroad_terminal": false,
+        "offscreen_rendering": false,
+        "other_vehicles_type": "highway_env.vehicle.behavior.IDMVehicle",
+        "policy_frequency": 1,
+        "real_time_rendering": false,
+        "render_agent": true,
+        "reward_speed_range": [
+            20,
+            30
+        ],
+        "right_lane_reward": 0.1,
+        "scaling": 5.5,
+        "screen_height": 150,
+        "screen_width": 600,
+        "show_trajectories": false,
+        "simulation_frequency": 15,
+        "vehicles_count": 50,
+        "vehicles_density": 1
+    }
+}
