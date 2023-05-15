@@ -34,12 +34,8 @@ python3 intersection_dqn.py
 python3 roundabout_dp.py
 
 python3 roundabout_MCTS.py
-
-
-
-
 ```
-Then there will be a folder created named videos and the video will be saved in that folder.
+Then there will be a folder created named out and the video will be saved according to the environment respectively.
 
 ## Results
 
