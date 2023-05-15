@@ -24,9 +24,19 @@ pip install ipywidgets
 git clone https://github.com/sharmithag/behavioural_planning_autonomous_driving.git
 git clone https://github.com/eleurent/highway-env.git
 git clone https://github.com/eleurent/rl-agents.git
-python3 highway_fast.py
+
+python3 highway_fast_dp.py
+
+python3 highway_fast_mcts.py
 
 python3 intersection_dqn.py
+
+python3 roundabout_dp.py
+
+python3 roundabout_MCTS.py
+
+
+
 
 ```
 Then there will be a folder created named videos and the video will be saved in that folder.
